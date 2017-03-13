@@ -8,7 +8,7 @@ function innerController(innerService) {
 
     var vm = this;
 
-    this.value = 'value';
+    this.value = 'dynamic value';
     this.utilisateurs = [];
 
     innerService.getUtilisateurs().then(function(response) {

@@ -1,6 +1,33 @@
-<b>{{$ctrl.value}}</b>
-<ul>
-    <li ng-repeat="utilisateur in $ctrl.utilisateurs">
-        {{utilisateur.prenom}} {{utilisateur.nom}}
-    </li>
-</ul>
+<md-content class="md-padding" layout-xs="column" layout="row">
+
+    <div flex-xs="" flex-gt-xs="50" layout="column">
+
+        <md-card md-theme="default">
+
+            <md-card-title>
+
+                <md-card-title-text>
+                    <span class="md-headline">Card</span>
+                    <span class="md-subhead">{{$ctrl.value}}</span>
+                </md-card-title-text>
+
+            </md-card-title>
+
+            <md-card-content>
+                <ul>
+                    <li ng-repeat="utilisateur in $ctrl.utilisateurs">
+                        {{utilisateur.prenom}} {{utilisateur.nom}}
+                    </li>
+                </ul>
+            </md-card-content>
+
+            <md-card-actions layout="row" layout-align="end center">
+                    <md-button>Action 1</md-button>
+                    <md-button>Action 2</md-button>
+            </md-card-actions>
+
+        </md-card>
+
+    </div>
+
+</md-content>
